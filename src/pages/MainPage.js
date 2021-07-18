@@ -13,8 +13,9 @@ const MainPage = () => {
             // this.responseText;
             // var myArr = JSON.parse(this.responseText);
             // myFunction(myArr);
-            var myArr = JSON.parse(this.responseText);
-            console.log('jsdno0 debug1', myArr)
+            // var myArr = JSON.parse(this.responseText);
+            // console.log('jsdno0 debug1', myArr)
+            console.log('jsdno0 debug1', this.responseText)
           }
         };
         xhttp.open("GET", "ajax_info.txt", true);
