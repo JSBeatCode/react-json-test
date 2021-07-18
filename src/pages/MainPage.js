@@ -12,6 +12,7 @@ const MainPage = () => {
             
             var myArr = JSON.parse(this.responseText);
             console.log('jsdno0 debug1', myArr);
+            console.log('jsdno0 debug2', Array.isArray(myArr));
 
             // console.log('jsdno0 debug1', this.responseText)
           }
