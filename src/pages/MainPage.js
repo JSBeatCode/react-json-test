@@ -9,16 +9,15 @@ const MainPage = () => {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
-            // document.getElementById("demo").innerHTML =
-            // this.responseText;
-            // var myArr = JSON.parse(this.responseText);
-            // myFunction(myArr);
-            // var myArr = JSON.parse(this.responseText);
-            // console.log('jsdno0 debug1', myArr)
-            console.log('jsdno0 debug1', this.responseText)
+            
+            var myArr = JSON.parse(this.responseText);
+            console.log('jsdno0 debug1', myArr);
+
+            // console.log('jsdno0 debug1', this.responseText)
           }
         };
-        xhttp.open("GET", "ajax_info.txt", true);
+        xhttp.open("GET", "myTutorials.txt", true);
+        // xhttp.open("GET", "ajax_info.txt", true);
         xhttp.send();
     }
 
